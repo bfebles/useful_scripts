@@ -9,7 +9,7 @@
 
 sort -u $sra_acc_list | parallel -j $threads "prefetch {} --max-size u"
 
-#if not using prefix, don't use above code
+#if not using prefetch, don't use above code
 
 file="list_sraid.txt"
 lines=$(cat $file)
